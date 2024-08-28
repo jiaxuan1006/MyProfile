@@ -1,0 +1,767 @@
+/**************************
+ *Name: Tan Jia Xuan      *
+ *Matric No: A20EC0154    *
+ *Section: 09             *
+ *Assignment: 01          *
+***************************/
+
+/*The theme for this css design:
+  The theme of css style 1 is mainly follow the concept to become simple layout design.
+  I love the design with unique but simple look so I try the second css style with this concept.
+  Also, the theme colors of this css are mainly light yellow and black.  */
+
+/*default setting*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#profile
+{
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+/*page0 design*/
+#p0
+{
+	width: 100vw;
+	height: 100vh;
+	background-image: url("image/p02.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	position: relative;
+
+}
+
+/*animation move right for decoration*/
+@keyframes moveup
+{
+	0%
+	{
+		transform: translateY(-100px);
+		visibility:visible;
+	}
+
+	100%
+	{
+		transform: translateY(0);
+		visibility: visible;
+	}
+
+}
+
+.welcome p, pr
+{
+	font-weight: bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #F8EECE;
+	font-size: 32px;
+	animation: moveup 2s ease 1;
+}
+
+.welcome p
+{
+	position: absolute;
+	top: 36%;
+	left: 43%;
+}
+
+.welcome pr
+{
+	position: absolute;
+	top: 48%;
+	left: 40%;
+}
+
+
+/*page1 design*/
+#p1
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: #F8EECE;
+    background-image: url("image/pro1.jpg");
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position-x: 85%;
+    background-position-y: 45%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);   
+}
+
+/*block for design1 */
+.covergrid1
+{
+    width: 400px;
+    height: 150px;
+    background-color: #F9A01B;
+    grid-column: 1 / 4;
+    grid-row: 4 / 6;
+}
+
+/*block for design title */
+.covergrid2
+{
+    width: 100px;
+    height: 100px;
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+    font-size: 3em;
+    margin-top: 5%;
+}
+
+/*content about me*/
+#aboutme
+{
+    width: 550x;
+    height: 100px;
+    grid-column: 2 / 4;
+    grid-row: 5 / 7;
+    font-size: 23px;
+}
+
+
+/*page 2 design*/
+#p2
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: #F9A01B;
+    position: relative;
+    
+}
+
+/*adjust the box to put the contents*/
+#box
+{
+    width: 950px;
+    height: 600px;
+    position: absolute;
+    top: 10%;
+    left: 18%;
+    background-color: #F8EECE;
+}
+
+/*resize the image's size in tag decoration*/
+img
+{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/*resize the image's size in tag picture*/
+#picture
+{
+	position: absolute;
+	left: 20%;
+	bottom: 40%;
+	width: 150px;
+	height: 170px;
+}
+
+
+/*resize the image's size in tag decoration*/
+#decoration
+{
+	position: absolute;
+    right: 0%;
+	top: 38%;
+	width: 700px;
+	height: 700px;
+}
+
+#content
+{
+    font-size: 23px;
+    position: absolute;
+	left: 48%;
+	bottom: 38%;
+}
+
+/*title align and design*/
+#personalinfo
+{
+    width: 500px;
+    height: 100px;
+    font-size: 45px;
+    position: absolute;
+    right: 5%;
+	top: 2%;
+}
+
+/*page3 design*/
+#p3
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: #F8EECE;
+    background-size: 35%;
+    background-position-x: 10%;
+    background-position-y: 48%;
+    position: relative;
+
+}
+
+/*block on top*/
+#top
+{
+	width: 100vw;
+	height: 150px;
+	background-color: black;
+}
+
+/*block on bottom*/
+#bottom
+{
+	width: 100vw;
+	height: 152px;
+	background-color: black;
+	position: absolute;
+	bottom: 0px;
+
+}
+
+/*hobby list align*/
+#list
+{	
+	font-size: 30px;
+	color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+	position: absolute;
+	top: 30%;
+	left: 60%;
+
+}
+
+/*title align*/
+#hobby-list
+{
+	color:whitesmoke;
+	font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 3em;
+	position: absolute;
+	top: 10%;
+	right: 40%;
+}
+
+/*decoration 1*/
+#block-1
+{
+	width: 12%;
+	height: 20%;
+	background-image: url("image/block-1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	background-color: yellowgreen;
+	border: solid 5px;
+	border-color:black;
+	position: absolute;
+	left:20%;
+	top: 20%;
+}
+
+/*decoration 2*/
+#block-2
+{
+	width: 12%;
+	height: 20%;
+	background-image: url("image/block-2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border: solid 5px;
+	border-color:black;
+	position: absolute;
+	left:20%;
+	top: 40%;
+}
+
+/*decoration 3*/
+#block-3
+{
+	width: 12%;
+	height: 20%;
+	background-image: url("image/block-3.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: deepskyblue;
+	border: solid 6px;
+	border-color:black;
+	position: absolute;
+	left:20%;
+	top: 60%;
+}
+
+/*p4 design*/
+#p4
+{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-70deg, #F8EECE 50%, #F9A01B 50%);
+    position: relative;
+}
+
+/*Title design*/
+#edu
+{
+    width: 50vw;
+    height: 100vh;
+	position: absolute;
+    top: 0%;
+    right: 0%;
+    padding: 1% 5% 1% 18%;
+	color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+/*Title design*/
+#exp
+{
+    width: 50vw;
+    height: 100vh;
+	position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 1% 18% 1% 5%;
+	color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 3em;
+    text-align: right;
+	font-weight: bold;
+}
+
+/* education content align*/
+#education
+{
+    position: absolute;
+    top: 20%;
+    left: 62%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 25px;
+}
+
+/* experiences content align*/
+#experiences
+{
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 25px;
+    text-align: right;
+}
+
+/*resize the image's size in tag decoration*/
+img
+{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/*resize the image's size in tag decoration*/
+.deco1
+{
+	position: relative;
+	top: 150px;
+	left: 640px;
+	width: 550px;
+	height: 550px;
+}
+
+/*resize the image's size in tag decoration*/
+.deco2
+{
+	position: relative;
+	bottom: 550px;
+	left: 550px;
+	width: 650px;
+	height: 650px;
+}
+
+/*p5 design*/
+#p5
+{
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(180deg, black 23%, #F8EECE 23%);
+}
+
+/*goals' blocks align using flex*/
+.goals
+{
+
+	width: 100vw;
+	height: 100vh; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Title design*/
+.goals p
+{
+	font-size: 3em;
+	font-weight: bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/*margin among the blocks*/
+.goal 
+{ 
+	margin: 50px;
+
+}
+
+/*design for personal goal*/
+#goal1
+{
+	width: 280px;
+	height: 270px;
+	border: solid;
+	background-image: url("image/3.png");
+	background-repeat: no-repeat;
+	background-size:  350px;
+	background-position:  center;
+	position: relative;
+}
+
+/*design for education goal*/
+#goal2
+{
+	width: 280px;
+	height: 270px;
+	border: solid;
+	background-image: url("image/1.png");
+	background-repeat: no-repeat;
+	background-size:  350px;
+	background-position:  center;
+	position: relative;
+}
+
+/*design for career goal*/
+#goal3
+{
+	width: 280px;
+	height: 270px;
+	border: solid;
+	background-image: url("image/2.png");
+	background-repeat: no-repeat;
+	background-size:  350px;
+	background-position:  center;
+	position: relative;
+}
+
+/*content inside the goals*/
+.content
+ {
+	position: absolute;
+	bottom: 0;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	color: #f1f1f1;
+	width: 100%;
+	height: 100%;
+	transition: .5s ease;
+	opacity:0;
+	color: white;
+	font-family:cursive;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+  }
+
+/*hovering setting while mouse over the goals*/
+/* When you mouse over the container, fade in the overlay title */
+.goal:hover .content
+{ opacity: 1; }
+
+
+/*page 6 and 7 design*/
+#p67{
+	width: 100vw;
+	height: 100vh;
+    background-color:black;
+	position: relative;
+}
+
+/*Title align and design*/
+#p67 p{
+	position: absolute;
+	top: 50px;
+	left: 150px;
+	font-size: 3em;
+	color: #f1f1f1;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+}
+
+/*design and align of each image*/
+#img1
+{
+	position: absolute;
+	top: 150px;
+	left: 180px;
+	border: solid 8px;
+	border-color: #F8EECE;
+	border-style: inset;
+	padding: 5px;
+}
+
+#img2
+{
+	position: absolute;
+	top:150px;
+	left: 500px;
+	border: solid 8px;
+	border-color: #F8EECE;
+	border-style: inset;
+	padding: 5px;
+}
+
+#img3
+{
+	position: absolute;
+	bottom: 50px;
+	left: 400px;
+	border: solid 8px;
+	border-color: #F8EECE;
+	border-style: inset;
+	padding: 5px;
+}
+
+#img4
+{
+	position: absolute;
+	bottom: 50px;
+	right: 400px;
+	border: solid 8px;
+	border-color: #F8EECE;
+	border-style: inset;
+	padding: 5px;
+}
+
+#img5
+{
+	position: absolute;
+	top: 150px;
+	right: 180px;
+	border: solid 8px;
+	border-color: #F8EECE;
+	border-style: inset;
+	padding: 5px;
+}
+
+#img6
+{
+	position: absolute;
+	top: 150px;
+	right: 500px;
+	border: solid 8px;
+	border-color: #F8EECE;
+	border-style: inset;
+	padding: 5px;
+}
+
+/*hovering to zoom in while mouse over the images*/
+/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+#img1:hover
+{ 
+	transform: scale(1.5); 
+
+}
+
+#img2:hover
+{ 
+	transform: scale(1.5); 
+
+}
+
+#img3:hover
+{ 
+	transform: scale(1.5); 
+
+}
+
+#img4:hover
+{ 
+	transform: scale(1.5); 
+
+}
+
+#img5:hover
+{ 
+	transform: scale(1.5); 
+
+}
+
+#img6:hover
+{ 
+	transform: scale(1.5); 
+
+}
+
+/*page8 design*/
+#p8
+{
+	width: 100vw;
+	height: 100vh;
+	background-image: url("image/p8cover.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	font-weight: bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	position: relative;
+
+}
+
+.gpa p, pq
+{
+	font-size: 2em;
+}
+
+.gpa p 
+{
+	position: absolute;
+	top: 40%;
+	left: 30%;
+}
+
+.gpa pq
+{
+	position: absolute;
+	top: 40%;
+	left: 34%;
+}
+
+.gpa a
+{
+	font-size: 50px;
+	position: absolute;
+	top: 55%;
+	left: 40%;
+}
+
+.gpa a:link
+{
+	text-decoration: none;
+	color: black;
+}
+
+.gpa a:visited
+{
+	color: #F9A01B;
+}
+
+.gpa a:hover
+{
+	background-color: #F8EECE;
+	color: black;
+}
+
+/*page9 design*/
+#p9
+{
+	width: 100vw;
+	height: 75vh;
+	background-color: #F9A01B ;
+	background-image: url("image/cover-p8.png");
+	background-repeat: no-repeat;
+	background-size: 500px;
+	background-position-x: right;
+	background-position-y: bottom;
+	position: relative;
+}
+
+/*resize the image's size in class decoration*/
+img
+{
+	max-width: 100%;
+	max-height: 100%;
+}
+/*resize the image's size in tag decoration*/
+#contact
+{
+	position: absolute;
+	left: 200px;
+	top: 130px;
+	width: 70px;
+	height: 70px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 14px;
+}
+
+/*align the comment box*/
+#comment
+{
+	position: absolute;
+	left: 400px;
+	top: 60px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*design for calculator page*/
+body
+{
+	width: 100vw;
+	height: 100vh;
+	background-image: url("image/gpa2.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: black;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	position: relative;
+}
+
+.CalculatorBox 
+{
+	position: absolute;
+	top: 25%;
+	right: 33%;
+}
+
+.CalculatorBox h1
+{
+	color: white;
+}
+
+table, td
+{
+	background-color: wheat;
+	border: solid 1px #F9A01B;
+}
+
+
+th
+{
+	background-color: #F9A01B;
+	height: 50px;
+	text-align: center;
+}
+
+
+
+input
+{
+	background-color: wheat;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: rgb(25, 24, 24);
+	height: 30px;
+	text-align: center;	
+}
+
+
+
+
